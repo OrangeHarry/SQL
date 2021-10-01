@@ -1,0 +1,26 @@
+9/13
+
+-- DML(CRUD)
+INSERT INTO `TBL`(
+`COL1`,
+`COL2`
+) VALUES(
+'VAL1',
+'VAL2'
+);
+
+SELECT `ID`, `NAME` 
+FROM `TBL` 
+WHERE '조건';  -- (WHERE, GROUP BY, HAVING, ORDER BY 등등)
+
+UPDATE `TBL` 
+SET `COL1` = 'VAL1',
+	`COL2` = 'VAL2'
+WHERE '조건';
+
+DELETE FROM `TBL` 
+WHERE '조건';
+
+
+select database(); == 내가 현재 선택한 database를 확인하는 키
+desc member; == 테이블로 들어와서 이제 그 테이블의 입력정보(목록?) 확인 키
